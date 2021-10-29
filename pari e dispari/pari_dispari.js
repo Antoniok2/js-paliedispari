@@ -19,9 +19,24 @@ console.log(randomNumPc);
 let sommaNumb = userNumber + randomNumPc;
 console.log(sommaNumb);
 
+if (controlloNumero(sommaNumb) == userPariDispari) {
+    console.log('hai vinto');
+} else {
+    console.log('hai perso');
+}
+
+function controlloNumero(numero) {
+
+    if (numero % 2 === 0) {
+        return "pari";
+    } else {
+        return "dispari";
+    }
+}
+
+/*
 // DEVO stabilire se il risultato è pari o dispari
 let dispari = true;
-let pari = true;
 
 if (sommaNumb % 2 === 0) {
     dispari = false;
@@ -38,5 +53,6 @@ if (userPariDispari === pari && sommaNumb !== dispari) {
     alert("Mi dispiace, ha vinto il pc")
 }
 
+*/
 
 
