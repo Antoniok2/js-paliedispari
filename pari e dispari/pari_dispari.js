@@ -21,6 +21,7 @@ console.log(sommaNumb);
 
 // DEVO stabilire se il risultato è pari o dispari
 let dispari = true;
+let pari = true;
 
 if (sommaNumb % 2 === 0) {
     dispari = false;
@@ -30,6 +31,12 @@ if (sommaNumb % 2 === 0) {
     console.log("Il numero ricavato è un numero dispari");
 }
 
-// 
+// ADESSO DEVO DICHIARARE ALL'UTENTE SE HA VINTO O MENO
+if (userPariDispari === pari && sommaNumb !== dispari) {
+    alert("Complimenti, hai vinto tu")
+} else {
+    alert("Mi dispiace, ha vinto il pc")
+}
+
 
 
