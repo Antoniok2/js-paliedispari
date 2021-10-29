@@ -18,3 +18,18 @@ console.log(randomNumPc);
 // SOMMIAMO ENTRAMBI I NUMERI OTTENUTI SIA DALL'UTENTE CHE DAL PC
 let sommaNumb = userNumber + randomNumPc;
 console.log(sommaNumb);
+
+// DEVO stabilire se il risultato è pari o dispari
+let dispari = true;
+
+if (sommaNumb % 2 === 0) {
+    dispari = false;
+    console.log("Il numero ricavato è un numero pari");
+} else {
+    dispari = true;
+    console.log("Il numero ricavato è un numero dispari");
+}
+
+// 
+
+
